@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Página Pública</title>
+</head>
+<body>
+<h1 th:text="${mensaje}">Mensaje por defecto</h1>
+<p><a href="/privado?token=usuario123">Ir a página privada (como usuario)</a></p>
+<p><a href="/admin?token=admin123">Ir a página de administrador</a></p>
+<p><a href="/privado">Ir a página privada sin token (debe fallar)</a></p>
+</body>
+</html>
